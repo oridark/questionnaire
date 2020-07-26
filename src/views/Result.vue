@@ -9,7 +9,7 @@
             <el-table-column prop="score" label="得分" sortable width="150"></el-table-column>
             <el-table-column prop="dwmc" label="单位"></el-table-column>
             <el-table-column prop="phoneNumber" label="电话" width="180"></el-table-column>
-            <el-table-column prop="answerTime" label="答题时间" width="180"></el-table-column>
+            <el-table-column prop="answerTime" label="答题时间" sortable width="180"></el-table-column>
         </el-table>
     </div>
 </template>
@@ -29,28 +29,28 @@ export default {
                     name: '张三',
                     dwmc: '水利局',
                     phoneNumber: '15957665904',
-                    answerTime: '',
+                    answerTime: '2020-07-21 17:22:35',
                     score: 90,
                 },
                 {
                     name: '李四',
                     dwmc: '街道办',
                     phoneNumber: '15957615904',
-                    answerTime: '',
+                    answerTime: '2020-07-22 12:22:35',
                     score: 89,
                 },
                 {
                     name: '王五',
                     dwmc: '社区',
                     phoneNumber: '15957621904',
-                    answerTime: '',
+                    answerTime: '2020-07-23 08:22:35',
                     score: 89,
                 },
                 {
                     name: '赵柳',
                     dwmc: '门卫处',
                     phoneNumber: '15957634904',
-                    answerTime: '',
+                    answerTime: '2020-07-21 16:22:35',
                     score: 95,
                 },
             ],
