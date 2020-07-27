@@ -78,8 +78,8 @@ export default {
         padding: 0.2rem 0;
         .label {
             width: 1rem;
-            height: 0.83rem;
-            line-height: 0.83rem;
+            height: 40px;
+            line-height: 40px;
             font-size: 0.26rem;
         }
         .formInside {
