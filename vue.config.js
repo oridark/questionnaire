@@ -10,7 +10,7 @@ const path = require('path');
 // const { name } = require('./package');
 // const webpack = require('webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const port = 8080; // dev port
+const port = 9898; // dev port
 const resolve = dir => path.join(__dirname, dir);
 // const babelPluginImport = require('babel-plugin-import')
 module.exports = {
@@ -52,7 +52,7 @@ module.exports = {
                     //   context: __dirname,
                     //   manifest: require('./manifest.json')
                     // }),
-                    new BundleAnalyzerPlugin()
+                    // new BundleAnalyzerPlugin()
                 ],
                 resolve: {
                     symlinks: true

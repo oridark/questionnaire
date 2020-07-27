@@ -42,7 +42,7 @@ export default {
             dwList: [
                 {
                     dwId: 1,
-                    dwmc: '水利局',
+                    dwmc: '栖霞区水务局',
                 },
                 {
                     dwId: 2,
@@ -80,6 +80,7 @@ export default {
             width: 1rem;
             height: 0.83rem;
             line-height: 0.83rem;
+            font-size: 0.26rem;
         }
         .formInside {
             width: 4rem;

@@ -32,7 +32,7 @@ export default {
                 {
                     index: 1,
                     cur: true,
-                    content: '水利局为什么这么厉害，请选择正确选项？',
+                    content: '栖霞区水务局为什么这么厉害，请选择正确选项？',
                     selects: [
                         {
                             label: 'A',
@@ -63,19 +63,19 @@ export default {
                     selects: [
                         {
                             label: 'A',
-                            content: '让他玩如果我听歌贺一航瑞庭苑让他',
+                            content: '让他玩如果我听法尔范无色歌贺一航瑞庭苑让他',
                         },
                         {
                             label: 'B',
-                            content: '让他玩如果我听歌贺一航瑞庭苑让他',
+                            content: '让他玩二五二分为二服务费v让他',
                         },
                         {
                             label: 'C',
-                            content: '让他玩如果我听歌贺一航瑞庭苑让他',
+                            content: '儿服务而非我而 是否吧是王夫人是如违反温热',
                         },
                         {
                             label: 'D',
-                            content: '让他玩如果我听歌贺一航瑞庭苑让他',
+                            content: '若干让她有劲儿发我eryeyhyuk6ik5乳房34染发24人GV儿童歌染发uj57uj56  ',
                         },
                     ],
                     answer: 'B',
@@ -128,21 +128,21 @@ export default {
 <style scoped lang="less">
 .questions {
     .question {
-        margin: 0.2rem 0;
-        height: 3.77rem;
+        margin: 0.4rem 0;
+        height: 5.77rem;
         margin-bottom: 0.5rem;
         .title {
             text-align: left;
-            padding: 2px 0;
+            padding: 0.2rem 0;
             border-bottom: 1px solid #4873a6;
             font-size: 0.3rem;
             color: #333;
         }
         .content {
             text-align: left;
-            padding: 0.2rem 0;
+            padding: 0.4rem 0;
             .select {
-                padding: 2px 0;
+                padding: 0.2rem 0;
                 margin-left: 4px;
                 color: #666;
                 display: flex;

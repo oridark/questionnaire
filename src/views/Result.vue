@@ -1,8 +1,26 @@
 <template>
     <div class="result">
+        <el-form :inline="true" :model="formInline" class="demo-form-inline">
+            <el-form-item label="姓名">
+                <el-input v-model="formInline.name" placeholder="答题人"></el-input>
+            </el-form-item>
+            <el-form-item label="电话">
+                <el-input v-model="formInline.phoneNumber" placeholder="电话号码"></el-input>
+            </el-form-item>
+            <el-form-item label="单位">
+                <el-select v-model="formInline.dw" placeholder="单位名称">
+                    <el-option label="全部" value="0"></el-option>
+                    <el-option label="栖霞区水务局" value="1"></el-option>
+                    <el-option label="街道办" value="2"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">查询</el-button>
+            </el-form-item>
+        </el-form>
         <el-table
             :data="resList"
-            style="width: 100%"
+            style="width: 100%" border
             :default-sort="{prop: 'score', order: 'descending'}"
         >
             <el-table-column prop="name" label="姓名" width="150"></el-table-column>
@@ -21,13 +39,15 @@ export default {
     name: 'AnswerManInfo',
     data() {
         return {
-            name: '',
-            phoneNumber: '',
-            dw: 1,
+            formInline: {
+                name: '',
+                phoneNumber: '',
+                dw: 1
+            },
             resList: [
                 {
                     name: '张三',
-                    dwmc: '水利局',
+                    dwmc: '栖霞区水务局',
                     phoneNumber: '15957665904',
                     answerTime: '2020-07-21 17:22:35',
                     score: 90,
@@ -60,20 +80,16 @@ export default {
         handleChange(value) {
             console.log(`selected ${value}`);
         },
-        start() {
-            if (!!this.name && this.phoneNumber) {
-                this.$router.push('/questions');
-            } else {
-                this.$message({
-                    message: '请先填写身份信息!',
-                    type: 'warning',
-                });
-            }
+        onSubmit() {
+            console.log(this.formInline);
         },
     },
 };
 </script>
 <style scoped lang="less">
 .result {
+    .demo-form-inline{
+        display: flex;
+    }
 }
 </style>
